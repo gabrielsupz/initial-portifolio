@@ -4,34 +4,49 @@ export const CharacterRoom = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  width: 400px;
-
-  border: 5px solid #141535;
+  flex-direction: column;
+  width: 380px;
+  margin: auto;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #35365c;
+  gap: 5px;
+
   .info {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 200px;
+    height: 324px;
+    gap: 5px;
     align-items: flex-end;
+  }
+  .profileAndInfo {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
   }
 
   .profileContent {
     display: flex;
-
+    flex-direction: column;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     width: max-content;
     height: max-content;
-    background-color: #130b28;
+    background: rgb(38, 38, 157);
+    background: radial-gradient(
+      circle,
+      rgba(38, 38, 157, 1) 0%,
+      rgba(32, 32, 134, 1) 14%,
+      rgba(19, 19, 83, 1) 48%,
+      rgba(19, 19, 81, 1) 50%,
+      rgba(19, 11, 40, 1) 100%
+    );
     border-radius: 8px;
   }
 `
 export const Phrases = styled.div`
-  width: 180px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   background-color: #1e1943;
@@ -43,14 +58,14 @@ export const Phrases = styled.div`
   }
 `
 export const stats = styled.div`
-  width: 200px;
-  height: 150px;
+  width: 65%;
+  height: 100%;
   border-radius: 4px;
   background-color: #473f74;
 `
 export const Items = styled.div`
-  width: 200px;
-  height: 80px;
+  width: 35%;
+  height: 100%;
   background-color: #8a5858;
   border-radius: 4px;
 `

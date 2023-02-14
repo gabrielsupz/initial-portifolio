@@ -1,4 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background: rgb(20, 21, 53);
+  background: radial-gradient(
+    circle,
+    rgba(20, 21, 53, 1) 0%,
+    rgba(7, 7, 18, 1) 99%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100%;
 }
