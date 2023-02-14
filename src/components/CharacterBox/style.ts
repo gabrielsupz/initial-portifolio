@@ -5,7 +5,7 @@ export const CharacterRoom = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 410px;
+  width: 400px;
 
   border: 5px solid #141535;
   border-radius: 10px;
@@ -21,6 +21,7 @@ export const CharacterRoom = styled.div`
 
   .profileContent {
     display: flex;
+
     justify-content: center;
     align-items: center;
     width: max-content;
@@ -30,7 +31,7 @@ export const CharacterRoom = styled.div`
   }
 `
 export const Phrases = styled.div`
-  width: 210px;
+  width: 180px;
   height: 120px;
   border-radius: 4px;
   background-color: #1e1943;
@@ -42,13 +43,13 @@ export const Phrases = styled.div`
   }
 `
 export const stats = styled.div`
-  width: 220px;
+  width: 200px;
   height: 150px;
   border-radius: 4px;
   background-color: #473f74;
 `
 export const Items = styled.div`
-  width: 220px;
+  width: 200px;
   height: 80px;
   background-color: #8a5858;
   border-radius: 4px;
