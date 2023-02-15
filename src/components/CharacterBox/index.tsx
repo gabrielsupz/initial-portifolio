@@ -24,6 +24,9 @@ export function CharacterBox() {
               <li>
                 <img src="src\assets\stamina.svg" alt="icone de stamina" />
               </li>
+              <li>
+                <img src="src\assets\book.svg" alt="icone de stamina" />
+              </li>
             </ul>
           </S.stats>
         </div>{' '}
