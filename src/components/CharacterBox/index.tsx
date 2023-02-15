@@ -10,7 +10,22 @@ export function CharacterBox() {
         </div>
         <div className="info">
           <S.Items></S.Items>
-          <S.stats></S.stats>
+          <S.stats>
+            <ul>
+              <li>
+                <img src="src\assets\muscle.svg" alt="icone de musculos" />
+              </li>
+              <li>
+                <img src="src\assets\coração.svg" alt="icone de coração" />
+              </li>
+              <li>
+                <img src="src\assets\brain.svg" alt="icone de cerebro" />
+              </li>
+              <li>
+                <img src="src\assets\stamina.svg" alt="icone de stamina" />
+              </li>
+            </ul>
+          </S.stats>
         </div>{' '}
       </div>
       <S.Phrases>
