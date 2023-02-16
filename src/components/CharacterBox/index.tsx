@@ -13,11 +13,13 @@ export function CharacterBox() {
           <S.stats>
             <ul>
               <li>
-                <img src="src\assets\muscle.svg" alt="icone de musculos" />
+                <img src="src\assets\coração.svg" alt="icone de coração" />
+                <img src="src\assets\hp.svg" alt="icone de stamina" />
               </li>
               <li>
-                <img src="src\assets\coração.svg" alt="icone de coração" />
+                <img src="src\assets\muscle.svg" alt="icone de musculos" />
               </li>
+
               <li>
                 <img src="src\assets\brain.svg" alt="icone de cerebro" />
               </li>

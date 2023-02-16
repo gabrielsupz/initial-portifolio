@@ -63,7 +63,23 @@ export const stats = styled.div`
   width: 100%;
   height: 70%;
   border-radius: 4px;
-  background-color: #473f74;
+  background: rgb(38, 38, 157);
+  background: radial-gradient(
+    circle,
+    rgba(38, 38, 157, 1) 0%,
+    rgba(32, 32, 134, 1) 0%,
+    rgba(22, 19, 83, 1) 0%,
+    rgba(21, 17, 75, 1) 39%,
+    rgba(12, 6, 28, 1) 100%
+  );
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
 `
 export const Items = styled.div`
   width: 100%;
