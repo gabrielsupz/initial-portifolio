@@ -9,7 +9,7 @@ export function CharacterBox() {
           <img src="src\assets\profile.svg" alt="" />
         </div>
         <div className="info">
-          <S.Items></S.Items>
+          {' '}
           <S.stats>
             <ul>
               <li>
@@ -29,10 +29,11 @@ export function CharacterBox() {
               </li>
             </ul>
           </S.stats>
+          <S.Items></S.Items>
         </div>{' '}
       </div>
       <S.Phrases>
-        <p>Olá! Seja bem vindo a meu perfil e portifólio!</p>
+        <p>Olá! Seja bem vindo a meu portifólio! Espero que goste!</p>
       </S.Phrases>
     </S.CharacterRoom>
   )

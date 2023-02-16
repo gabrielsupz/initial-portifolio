@@ -14,6 +14,7 @@ export const CharacterRoom = styled.div`
 
   .info {
     display: flex;
+    flex-direction: column;
     width: 200px;
     height: 324px;
     gap: 5px;
@@ -46,6 +47,7 @@ export const CharacterRoom = styled.div`
   }
 `
 export const Phrases = styled.div`
+  font-family: 'Press Start 2P', cursive;
   width: 100%;
   height: 120px;
   border-radius: 4px;
@@ -58,14 +60,14 @@ export const Phrases = styled.div`
   }
 `
 export const stats = styled.div`
-  width: 65%;
-  height: 100%;
+  width: 100%;
+  height: 70%;
   border-radius: 4px;
   background-color: #473f74;
 `
 export const Items = styled.div`
-  width: 35%;
-  height: 100%;
+  width: 100%;
+  height: 30%;
   background-color: #8a5858;
   border-radius: 4px;
 `
