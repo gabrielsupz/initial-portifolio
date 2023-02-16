@@ -4,6 +4,7 @@ export const CharacterRoom = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 380px;
   margin: auto;
@@ -11,22 +12,29 @@ export const CharacterRoom = styled.div`
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 5px;
+  @media screen and (max-width: 400px) {
+    width: 350px;
+  }
 
   .info {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 220px;
     height: 324px;
     gap: 5px;
-    align-items: flex-end;
+    align-items: center;
   }
   .profileAndInfo {
     display: flex;
     gap: 5px;
     flex-direction: row;
+    @media screen and (max-width: 400px) {
+      max-width: 350px;
+    }
   }
 
   .profileContent {
+    padding: 5px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -34,7 +42,7 @@ export const CharacterRoom = styled.div`
     align-items: center;
     width: max-content;
     height: max-content;
-    background: rgb(38, 38, 157);
+    /* background: rgb(38, 38, 157);
     background: radial-gradient(
       circle,
       rgba(38, 38, 157, 1) 0%,
@@ -42,28 +50,34 @@ export const CharacterRoom = styled.div`
       rgba(19, 19, 83, 1) 48%,
       rgba(19, 19, 81, 1) 50%,
       rgba(19, 11, 40, 1) 100%
-    );
+    ); */
     border-radius: 8px;
   }
 `
 export const Phrases = styled.div`
   font-family: 'Press Start 2P', cursive;
-  width: 100%;
+  width: 90%;
   height: 120px;
   border-radius: 4px;
-  background-color: #1e1943;
+  background-color: #060116;
   padding: 10px;
   justify-content: center;
   align-items: center;
   p {
+    padding: 5px;
+    display: flex;
+    height: 100%;
     text-align: center;
+
+    justify-content: center;
+    text-shadow: 1px 1px 2px red, 0 0 3px yellow;
   }
 `
 export const stats = styled.div`
   width: 100%;
   height: 70%;
   border-radius: 4px;
-  background: rgb(38, 38, 157);
+  /* background: rgb(38, 38, 157);
   background: radial-gradient(
     circle,
     rgba(38, 38, 157, 1) 0%,
@@ -71,19 +85,67 @@ export const stats = styled.div`
     rgba(22, 19, 83, 1) 0%,
     rgba(21, 17, 75, 1) 39%,
     rgba(12, 6, 28, 1) 100%
-  );
-  padding: 10px;
+  ); */
+
   align-items: center;
   justify-content: center;
+  ul {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .bar {
+      width: initial;
+      height: inherit;
+    }
+  }
   li {
+    font-family: 'Press Start 2P', cursive;
     display: flex;
     align-items: center;
+    width: max-content;
+    gap: 10px;
+
+    @media screen and (max-width: 400px) {
+      font-size: 8px;
+    }
+    font-size: 10px;
+  }
+`
+export const BoxItems = styled.div`
+  width: 210px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .item {
+    min-width: 202px;
+    min-height: 68px;
+    position: absolute;
+    z-index: 0.5;
+  }
+  @media screen and (max-width: 400px) {
+    .item {
+      width: 200px;
+    }
   }
 `
 export const Items = styled.div`
-  width: 100%;
-  height: 30%;
-  background-color: #8a5858;
-  border-radius: 4px;
+  width: 210px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 9px;
+  img {
+    max-width: 40px;
+    max-height: 40px;
+    z-index: 2;
+  }
 `

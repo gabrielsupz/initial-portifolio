@@ -14,10 +14,11 @@ export function CharacterBox() {
             <ul>
               <li>
                 <img src="src\assets\coração.svg" alt="icone de coração" />
-                <img src="src\assets\hp.svg" alt="icone de stamina" />
-              </li>
-              <li>
-                <img src="src\assets\muscle.svg" alt="icone de musculos" />
+                <img
+                  className="bar"
+                  src="src\assets\hp.svg"
+                  alt="icone de stamina"
+                />
               </li>
 
               <li>
@@ -27,11 +28,29 @@ export function CharacterBox() {
                 <img src="src\assets\stamina.svg" alt="icone de stamina" />
               </li>
               <li>
-                <img src="src\assets\book.svg" alt="icone de stamina" />
+                <img src="src\assets\class.svg" alt="icone de livro fechado" />
+                <p>Developer </p>
+              </li>
+              <li>
+                <img src="src\assets\book.svg" alt="icone de livro aberto" />
+                <p>Junior Developer</p>
               </li>
             </ul>
           </S.stats>
-          <S.Items></S.Items>
+          <S.BoxItems>
+            {' '}
+            <S.Items>
+              <img src="src\assets\book.svg" alt="" />
+              <img src="src\assets\book.svg" alt="" />
+              <img src="src\assets\book.svg" alt="" />
+              <img src="src\assets\book.svg" alt="" />
+            </S.Items>
+            <img
+              className="item"
+              src="src\assets\inventory.svg"
+              alt="Imagem de inventário"
+            />{' '}
+          </S.BoxItems>
         </div>{' '}
       </div>
       <S.Phrases>
