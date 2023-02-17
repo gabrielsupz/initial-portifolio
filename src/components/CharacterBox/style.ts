@@ -29,6 +29,9 @@ export const CharacterRoom = styled.div`
     @media screen and (max-width: 380px) {
       width: 190px;
     }
+    @media screen and (max-width: 370px) {
+      width: 200px;
+    }
   }
   .profileAndInfo {
     display: flex;
@@ -40,13 +43,12 @@ export const CharacterRoom = styled.div`
     @media screen and (max-width: 380px) {
       gap: 0;
     }
+    @media screen and (max-width: 370px) {
+      flex-direction: column;
+    }
   }
 
   .profileContent {
-    @media screen and (max-width: 380px) {
-      width: 190px;
-      padding: 0px;
-    }
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -68,8 +70,8 @@ export const CharacterRoom = styled.div`
   }
 `
 export const Phrases = styled.div`
-  @media screen and (max-width: 374px) {
-    max-width: 260px;
+  @media screen and (max-width: 370px) {
+    max-width: 280px;
   }
   font-family: 'Press Start 2P', cursive;
   width: 90%;
@@ -110,31 +112,18 @@ export const stats = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
-    @media screen and (max-width: 374px) {
-      img {
-        max-width: 20px;
-        max-height: 20px;
-      }
-      li {
-        font-size: 7px;
-      }
-    }
+
     img {
       width: 40px;
       height: 40px;
     }
-
-    .bar {
-      width: initial;
-      height: inherit;
-      @media screen and (max-width: 380px) {
-        max-width: 130px;
-        height: 15px;
-      }
-      @media screen and (max-width: 374px) {
-        max-width: 100px;
-        height: 10px;
-      }
+  }
+  .bar {
+    width: initial;
+    height: inherit;
+    @media screen and (max-width: 380px) {
+      max-width: 130px;
+      height: 15px;
     }
   }
   li {
@@ -147,6 +136,9 @@ export const stats = styled.div`
 
     @media screen and (max-width: 400px) {
       font-size: 9px;
+    }
+    @media screen and (max-width: 370px) {
+      font-size: 12;
     }
     font-size: 10px;
   }
@@ -169,11 +161,9 @@ export const BoxItems = styled.div`
       width: 200px;
     }
   }
-  @media screen and (max-width: 374px) {
+  @media screen and (max-width: 370px) {
     .item {
-      img {
-        width: 100px;
-      }
+      width: 250px;
     }
   }
 `
@@ -198,11 +188,11 @@ export const Items = styled.div`
     z-index: 2;
   }
   @media screen and (max-width: 370px) {
-    width: 190px;
-    margin-left: 2px;
+    margin-left: 5px;
+    gap: 12px;
     img {
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
     }
   }
 `
