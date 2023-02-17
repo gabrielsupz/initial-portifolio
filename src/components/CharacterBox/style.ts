@@ -15,6 +15,9 @@ export const CharacterRoom = styled.div`
   @media screen and (max-width: 400px) {
     width: 350px;
   }
+  @media screen and (max-width: 374px) {
+    max-width: 100vw;
+  }
 
   .info {
     display: flex;
@@ -23,6 +26,9 @@ export const CharacterRoom = styled.div`
     height: 324px;
     gap: 5px;
     align-items: center;
+    @media screen and (max-width: 380px) {
+      width: 190px;
+    }
   }
   .profileAndInfo {
     display: flex;
@@ -31,9 +37,16 @@ export const CharacterRoom = styled.div`
     @media screen and (max-width: 400px) {
       max-width: 350px;
     }
+    @media screen and (max-width: 380px) {
+      gap: 0;
+    }
   }
 
   .profileContent {
+    @media screen and (max-width: 380px) {
+      width: 190px;
+      padding: 0px;
+    }
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -55,6 +68,9 @@ export const CharacterRoom = styled.div`
   }
 `
 export const Phrases = styled.div`
+  @media screen and (max-width: 374px) {
+    max-width: 260px;
+  }
   font-family: 'Press Start 2P', cursive;
   width: 90%;
   height: 120px;
@@ -94,7 +110,15 @@ export const stats = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
-
+    @media screen and (max-width: 374px) {
+      img {
+        max-width: 20px;
+        max-height: 20px;
+      }
+      li {
+        font-size: 7px;
+      }
+    }
     img {
       width: 40px;
       height: 40px;
@@ -103,17 +127,26 @@ export const stats = styled.div`
     .bar {
       width: initial;
       height: inherit;
+      @media screen and (max-width: 380px) {
+        max-width: 130px;
+        height: 15px;
+      }
+      @media screen and (max-width: 374px) {
+        max-width: 100px;
+        height: 10px;
+      }
     }
   }
   li {
     font-family: 'Press Start 2P', cursive;
     display: flex;
+    line-height: 15px;
     align-items: center;
     width: max-content;
     gap: 10px;
 
     @media screen and (max-width: 400px) {
-      font-size: 8px;
+      font-size: 9px;
     }
     font-size: 10px;
   }
@@ -130,13 +163,29 @@ export const BoxItems = styled.div`
     position: absolute;
     z-index: 0.5;
   }
+
   @media screen and (max-width: 400px) {
     .item {
       width: 200px;
     }
   }
+  @media screen and (max-width: 374px) {
+    .item {
+      img {
+        width: 100px;
+      }
+    }
+  }
 `
 export const Items = styled.div`
+  @media screen and (max-width: 375px) {
+    margin-left: 20px;
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
   width: 210px;
   height: 68px;
   display: flex;
@@ -147,5 +196,13 @@ export const Items = styled.div`
     max-width: 40px;
     max-height: 40px;
     z-index: 2;
+  }
+  @media screen and (max-width: 370px) {
+    width: 190px;
+    margin-left: 2px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 `
