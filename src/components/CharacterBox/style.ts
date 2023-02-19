@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import inventory from '../../assets/inventory.svg'
 export const CharacterRoom = styled.div`
   display: flex;
   align-items: center;
@@ -144,55 +144,14 @@ export const stats = styled.div`
   }
 `
 export const BoxItems = styled.div`
-  width: 210px;
-  height: 50%;
+  width: 231px;
+  height: 81px;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  .item {
-    min-width: 202px;
-    min-height: 68px;
-    position: absolute;
-    z-index: 0.5;
-  }
-
-  @media screen and (max-width: 400px) {
-    .item {
-      width: 200px;
-    }
-  }
-  @media screen and (max-width: 370px) {
-    .item {
-      width: 250px;
-    }
-  }
-`
-export const Items = styled.div`
-  @media screen and (max-width: 375px) {
-    margin-left: 20px;
-    img {
-      width: 35px;
-      height: 35px;
-    }
-  }
-
-  width: 210px;
-  height: 68px;
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-  gap: 9px;
-  img {
-    max-width: 40px;
-    max-height: 40px;
-    z-index: 2;
-  }
-  @media screen and (max-width: 370px) {
-    margin-left: 5px;
-    gap: 12px;
-    img {
-      width: 40px;
-      height: 40px;
-    }
-  }
+  justify-content: space-around;
+  background-image: url(${inventory});
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 14px;
 `

@@ -38,18 +38,10 @@ export function CharacterBox() {
             </ul>
           </S.stats>
           <S.BoxItems>
-            {' '}
-            <S.Items>
-              <img src="src\assets\book.svg" alt="" />
-              <img src="src\assets\book.svg" alt="" />
-              <img src="src\assets\book.svg" alt="" />
-              <img src="src\assets\book.svg" alt="" />
-            </S.Items>
-            <img
-              className="item"
-              src="src\assets\inventory.svg"
-              alt="Imagem de inventário"
-            />{' '}
+            <img src="src\assets\book.svg" alt="" />
+            <img src="src\assets\book.svg" alt="" />
+            <img src="src\assets\book.svg" alt="" />
+            <img src="src\assets\book.svg" alt="" />
           </S.BoxItems>
         </div>{' '}
       </div>
