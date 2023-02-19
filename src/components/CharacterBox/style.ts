@@ -7,7 +7,7 @@ export const CharacterRoom = styled.div`
   align-items: center;
   flex-direction: column;
   width: 380px;
-  margin: auto;
+
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;

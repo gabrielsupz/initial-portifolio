@@ -7,9 +7,15 @@ export function Traits() {
       <img src="src\assets\title-traços.svg" alt="" />
 
       <S.TraitsBox>
-        <h2>Porjetos</h2>
-        <h2>Porjetos</h2>
-        <h2>Porjetos</h2>
+        <S.Trait>
+          <h2>Simpatico</h2>
+        </S.Trait>
+        <S.Trait>
+          <h2>Simpatico</h2>
+        </S.Trait>
+        <S.Trait>
+          <h2>Simpatico</h2>
+        </S.Trait>
       </S.TraitsBox>
     </S.Traits>
   )
