@@ -14,26 +14,51 @@ export function CharacterBox() {
             <ul>
               <li>
                 <img src="src\assets\coração.svg" alt="icone de coração" />
-                <img
-                  className="bar"
-                  src="src\assets\hp.svg"
-                  alt="icone de stamina"
-                />
-              </li>
-
-              <li>
-                <img src="src\assets\brain.svg" alt="icone de cerebro" />
+                <div>
+                  <S.TagAndNumber>
+                    {' '}
+                    <h3>HP</h3> <h3>100/100</h3>
+                  </S.TagAndNumber>
+                  <S.HPBar></S.HPBar>
+                </div>
               </li>
               <li>
                 <img src="src\assets\stamina.svg" alt="icone de stamina" />
+                <div>
+                  <S.TagAndNumber>
+                    {' '}
+                    <h3>STA</h3> <h3>150/150</h3>
+                  </S.TagAndNumber>
+                  <S.STABar></S.STABar>
+                </div>
               </li>
               <li>
+                <img src="src\assets\brain.svg" alt="icone de cerebro" />
+                <div>
+                  <S.TagAndNumber>
+                    {' '}
+                    <h3>INT</h3> <h3> 67</h3>
+                  </S.TagAndNumber>
+                  <S.INTBar>
+                    <h3>xp</h3>
+                  </S.INTBar>
+                </div>
+              </li>
+
+              <li>
                 <img src="src\assets\class.svg" alt="icone de livro fechado" />
-                <p>Developer </p>
+                <div>
+                  <h3 className="class">Class:</h3> <p>Developer </p>{' '}
+                </div>
               </li>
               <li>
                 <img src="src\assets\book.svg" alt="icone de livro aberto" />
-                <p>Junior Developer</p>
+                <div>
+                  <p>Junior Developer</p>
+                  <S.DEVBar>
+                    <h3>xp</h3>
+                  </S.DEVBar>
+                </div>
               </li>
             </ul>
           </S.stats>
@@ -46,7 +71,7 @@ export function CharacterBox() {
         </div>{' '}
       </div>
       <S.Phrases>
-        <p>Olá! Seja bem vindo a meu portifólio! Espero que goste!</p>
+        <p>Olá! Seja bem-vindo a meu portifólio! Espero que goste!</p>
       </S.Phrases>
     </S.CharacterRoom>
   )
