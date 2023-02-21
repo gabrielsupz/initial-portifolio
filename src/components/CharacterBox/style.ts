@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import inventory from '../../assets/inventory.svg'
+
 export const CharacterRoom = styled.div`
   display: flex;
   align-items: center;
@@ -23,7 +24,7 @@ export const CharacterRoom = styled.div`
     display: flex;
     flex-direction: column;
     width: 220px;
-    height: 324px;
+    height: 350px;
     gap: 5px;
     align-items: center;
     @media screen and (max-width: 380px) {
@@ -67,6 +68,34 @@ export const CharacterRoom = styled.div`
       rgba(19, 11, 40, 1) 100%
     ); */
     border-radius: 8px;
+  }
+`
+
+export const CharacterName = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Press Start 2P', cursive;
+  h2.name {
+    font-size: 12px;
+    display: flex;
+    background: rgb(224, 47, 47);
+    background: linear-gradient(
+      90deg,
+      rgba(224, 47, 47, 1) 0%,
+      rgba(113, 131, 43, 1) 53%,
+      rgba(48, 40, 102, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    width: 100%;
+
+    text-align: center;
+    justify-content: center;
   }
 `
 export const Phrases = styled.div`
@@ -133,6 +162,7 @@ export const stats = styled.div`
     align-items: center;
     width: max-content;
     gap: 10px;
+    width: 100%;
 
     @media screen and (max-width: 400px) {
       font-size: 9px;
