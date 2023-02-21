@@ -111,13 +111,14 @@ export const Phrases = styled.div`
   justify-content: center;
   align-items: center;
   p {
+    line-height: 20px;
     padding: 5px;
     display: flex;
     height: 100%;
     text-align: center;
-
     justify-content: center;
     text-shadow: 1px 1px 2px red, 0 0 3px yellow;
+    font-size: 15px;
   }
 `
 export const stats = styled.div`

@@ -56,7 +56,7 @@ export function CharacterBox() {
                     alt="icone de livro fechado"
                   />
                   <div>
-                    <h3 className="class">Class:</h3> <p>Developer </p>{' '}
+                    <h3 className="class">Classe:</h3> <p>Developer </p>{' '}
                   </div>
                 </li>
                 <li>
@@ -70,17 +70,12 @@ export function CharacterBox() {
                 </li>
               </ul>
             </S.stats>
-            <S.BoxItems>
-              <img src="src\assets\book.svg" alt="" />
-              <img src="src\assets\book.svg" alt="" />
-              <img src="src\assets\book.svg" alt="" />
-              <img src="src\assets\book.svg" alt="" />
-            </S.BoxItems>
+            <S.BoxItems></S.BoxItems>
           </div>{' '}
         </div>
       </S.CharacterName>
       <S.Phrases>
-        <p>Olá! Seja bem-vindo a meu portifólio! Espero que goste!</p>
+        <p>Olá! Parece um ótimo dia para colocar a mão no código não acha? </p>
       </S.Phrases>
     </S.CharacterRoom>
   )
