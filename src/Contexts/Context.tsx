@@ -1,5 +1,7 @@
 import React, { ReactNode, useContext, useState } from 'react'
 
+// Criando valor inicial
+
 type ItemsProps = 'Coffe' | 'Game'
 
 type UserCOntextType = {
@@ -13,22 +15,23 @@ const initialValue = {
   items: item,
   setItems: () => {}
 }
-export const TabsContext = React.createContext<UserCOntextType>(initialValue)
+export const CharacterContext =
+  React.createContext<UserCOntextType>(initialValue)
 
 interface IProps {
   children: ReactNode
 }
 
-export const useTabs = () => {
-  const context = useContext(TabsContext)
+export const useCharacter = () => {
+  const context = useContext(CharacterContext)
   return context
 }
-export const TabsProvider = ({ children }: IProps) => {
+export const CharacterProvider = ({ children }: IProps) => {
   const [items, setItems] = useState<ItemsProps>('Coffe')
 
   return (
-    <TabsContext.Provider value={{ items, setItems }}>
+    <CharacterContext.Provider value={{ items, setItems }}>
       {children}
-    </TabsContext.Provider>
+    </CharacterContext.Provider>
   )
 }
