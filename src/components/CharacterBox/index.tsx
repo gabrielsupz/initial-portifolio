@@ -1,5 +1,6 @@
 import * as S from './style'
 import React from 'react'
+import { Phrases } from '../Phrases'
 
 export function CharacterBox() {
   return (
@@ -74,9 +75,7 @@ export function CharacterBox() {
           </div>{' '}
         </div>
       </S.CharacterName>
-      <S.Phrases>
-        <p>Olá! Parece um ótimo dia para colocar a mão no código não acha? </p>
-      </S.Phrases>
+      <Phrases />
     </S.CharacterRoom>
   )
 }
