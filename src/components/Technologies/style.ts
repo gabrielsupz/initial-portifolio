@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 
 export const Techs = styled.div`
+  border: 2.5px solid black;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: relative;
+  min-height: 200px;
 
   @media screen and (max-width: 374px) {
     width: 100%;
@@ -20,21 +24,27 @@ export const Techs = styled.div`
       width: 320px;
     }
   }
+
+  .title {
+    position: absolute;
+    top: -35px;
+  }
 `
 export const TechsBox = styled.div`
+  margin-top: 80px;
   @media screen and (max-width: 400px) {
     margin-left: 5px;
+    display: flexbox;
   }
   @media screen and (max-width: 450px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
-    grid-row-gap: 1em;
   }
   display: flexbox;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 `
 export const Tech = styled.div`
   display: flex;

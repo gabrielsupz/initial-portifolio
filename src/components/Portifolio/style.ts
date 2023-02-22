@@ -19,7 +19,7 @@ export const Portifolio = styled.div`
   section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 100px;
   }
   @media screen and (max-width: 820px) {
     .header {

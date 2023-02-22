@@ -1,10 +1,15 @@
 import * as S from './style'
+import TitleTechs from '../../assets/TitleTechs.svg'
 import React from 'react'
 
 export function Technologies() {
   return (
     <S.Techs>
-      <img src="src\assets\title-traços.svg" alt="" />
+      <img
+        className="title"
+        src={TitleTechs}
+        alt="Título Techs referente a tecnologias"
+      />
 
       <S.TechsBox>
         <S.Tech>

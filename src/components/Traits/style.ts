@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const Traits = styled.div`
+  border: 2.5px solid black;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -8,6 +10,7 @@ export const Traits = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  min-height: 200px;
   @media screen and (max-width: 374px) {
     width: 100%;
     img {
@@ -20,8 +23,14 @@ export const Traits = styled.div`
       width: 320px;
     }
   }
+  position: relative;
+  .title {
+    position: absolute;
+    top: -35px;
+  }
 `
 export const TraitsBox = styled.div`
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;

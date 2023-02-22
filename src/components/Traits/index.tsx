@@ -1,10 +1,12 @@
 import * as S from './style'
+import TitleTraits from '../../assets/TitleTraits.svg'
+
 import React from 'react'
 
 export function Traits() {
   return (
     <S.Traits>
-      <img src="src\assets\title-traços.svg" alt="" />
+      <img className="title" src={TitleTraits} alt="" />
 
       <S.TraitsBox>
         <S.Trait>
