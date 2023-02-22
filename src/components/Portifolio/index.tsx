@@ -2,7 +2,7 @@ import * as S from './style'
 import React from 'react'
 import { CharacterBox } from '../CharacterBox'
 import { Header } from '../Header'
-import { Projects } from '../Projetos'
+import { Technologies } from '../Technologies'
 import { Traits } from '../Traits'
 
 export function Portifolio() {
@@ -17,7 +17,7 @@ export function Portifolio() {
         <section>
           {' '}
           <Traits />
-          <Projects />
+          <Technologies />
         </section>
       </main>
     </S.Portifolio>

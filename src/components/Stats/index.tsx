@@ -10,15 +10,14 @@ export function Stats() {
       <S.Stats>
         <ul>
           <li>
-            {' '}
             <h2 className="name">Gabriel Suptitz</h2>
           </li>
           <li>
             <img src="src\assets\coração.svg" alt="icone de coração" />
             <div>
               <S.TagAndNumber>
-                {' '}
-                <h3>HP</h3> <h3>100/100</h3>
+                <h3>HP</h3>
+                <h3>100/100</h3>
               </S.TagAndNumber>
               <S.HPBar></S.HPBar>
             </div>
@@ -27,8 +26,8 @@ export function Stats() {
             <img src="src\assets\stamina.svg" alt="icone de stamina" />
             <div>
               <S.TagAndNumber>
-                {' '}
-                <h3>STA</h3> <h3>150/150</h3>
+                <h3>STA</h3>
+                <h3>150/150</h3>
               </S.TagAndNumber>
               <S.STABar></S.STABar>
             </div>
