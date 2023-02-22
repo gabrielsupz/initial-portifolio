@@ -27,7 +27,7 @@ export const useCharacter = () => {
   return context
 }
 export const CharacterProvider = ({ children }: IProps) => {
-  const [items, setItems] = useState<ItemsProps>('Game')
+  const [items, setItems] = useState<ItemsProps>('Coffe')
 
   return (
     <CharacterContext.Provider value={{ items, setItems }}>

@@ -27,14 +27,7 @@ export const Stats = styled.div`
       height: 40px;
     }
   }
-  .bar {
-    width: initial;
-    height: inherit;
-    @media screen and (max-width: 380px) {
-      max-width: 130px;
-      height: 15px;
-    }
-  }
+
   li {
     font-family: 'Press Start 2P', cursive;
     display: flex;
@@ -61,6 +54,9 @@ export const Stats = styled.div`
   }
   .class {
     color: #be543f;
+  }
+  .buff {
+    border-radius: 4px;
   }
 `
 
@@ -131,4 +127,8 @@ export const TagAndNumber = styled.div`
   min-width: 140px;
   justify-content: space-between;
   padding: 0 3px;
+
+  strong {
+    color: #5050cc;
+  }
 `
