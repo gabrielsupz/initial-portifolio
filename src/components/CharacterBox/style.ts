@@ -78,25 +78,6 @@ export const CharacterName = styled.div`
   align-items: center;
 
   font-family: 'Press Start 2P', cursive;
-  h2.name {
-    font-size: 12px;
-    display: flex;
-    background: rgb(224, 47, 47);
-    background: linear-gradient(
-      90deg,
-      rgba(224, 47, 47, 1) 0%,
-      rgba(113, 131, 43, 1) 53%,
-      rgba(48, 40, 102, 1) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: black;
-    width: 100%;
-
-    text-align: center;
-    justify-content: center;
-  }
 `
 
 export const BoxItems = styled.div`

@@ -34,9 +34,39 @@ export const TraitsBox = styled.div`
   }
 `
 export const Trait = styled.div`
+  font-size: 10px;
   display: flex;
   border: 1px solid violet;
   border-radius: 4px;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
+  gap: 5px;
+
+  img {
+    width: 25px;
+    height: 25px;
+    background-color: #5050cc;
+    border: 1px solid yellow;
+    border-radius: 8px;
+  }
+
+  h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+    display: flex;
+    background: rgb(116, 46, 207);
+    background: linear-gradient(
+      180deg,
+      rgba(116, 46, 207, 1) 0%,
+      rgba(167, 108, 130, 1) 54%,
+      rgba(255, 214, 0, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+
+    text-align: center;
+    justify-content: center;
+  }
 `

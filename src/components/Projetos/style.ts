@@ -42,4 +42,13 @@ export const Project = styled.div`
   border-radius: 4px;
   align-items: center;
   padding: 10px;
+  gap: 5px;
+
+  img {
+    width: 40px;
+    height: 40px;
+    background-color: #5050cc;
+    border: 1px solid yellow;
+    border-radius: 8px;
+  }
 `

@@ -8,13 +8,20 @@ export function Projects() {
 
       <S.ProjectsBox>
         <S.Project>
-          <h2>Porjetos</h2>
+          <img src="" alt="" />
+          <h2>Projetos</h2>
         </S.Project>
         <S.Project>
-          <h2>Porjetos</h2>
+          <img src="" alt="" />
+          <h2>Projetos</h2>
         </S.Project>
         <S.Project>
-          <h2>Porjetos</h2>
+          <img src="" alt="" />
+          <h2>Projetos</h2>
+        </S.Project>
+        <S.Project>
+          <img src="" alt="" />
+          <h2>Projetos</h2>
         </S.Project>
       </S.ProjectsBox>
     </S.Projects>

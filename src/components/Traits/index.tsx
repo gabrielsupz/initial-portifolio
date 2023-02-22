@@ -8,13 +8,24 @@ export function Traits() {
 
       <S.TraitsBox>
         <S.Trait>
+          <img src="" alt="" />
           <h2>Simpatico</h2>
         </S.Trait>
         <S.Trait>
-          <h2>Simpatico</h2>
+          <img src="" alt="" />
+          <h2>Curioso</h2>
         </S.Trait>
         <S.Trait>
-          <h2>Simpatico</h2>
+          <img src="" alt="" />
+          <h2>Heart of Dev</h2>
+        </S.Trait>
+        <S.Trait>
+          <img src="" alt="" />
+          <h2>Projetos Bons</h2>
+        </S.Trait>
+        <S.Trait>
+          <img src="" alt="" />
+          <h2>Front-End ++</h2>
         </S.Trait>
       </S.TraitsBox>
     </S.Traits>
