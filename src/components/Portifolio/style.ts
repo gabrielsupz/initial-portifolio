@@ -25,12 +25,19 @@ export const Portifolio = styled.div`
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    gap: 20px;
 
     div.TraitsAndTechs {
       width: 60%;
       display: flex;
       flex-direction: column;
       gap: 50px;
+    }
+
+    div.SkillsAndAffinitys {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
     }
   }
 
@@ -47,6 +54,19 @@ export const Portifolio = styled.div`
         display: flex;
         flex-direction: column;
         gap: 50px;
+      }
+
+      div.SkillsAndAffinitys {
+        flex-direction: row;
+
+        gap: 80px;
+      }
+      @media screen and (max-width: 735px) {
+        div.SkillsAndAffinitys {
+          flex-direction: column;
+
+          gap: 80px;
+        }
       }
     }
   }
