@@ -39,7 +39,7 @@ export const Traits = styled.div`
 export const TraitsBox = styled.div`
   margin-top: 80px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   align-items: center;
   justify-content: center;
@@ -60,32 +60,30 @@ export const TraitsBox = styled.div`
 export const Trait = styled.div`
   font-size: 10px;
   display: flex;
-  border: 1px solid violet;
+
   border-radius: 4px;
   align-items: center;
   padding: 5px;
   gap: 5px;
 
   img {
-    min-width: 25px;
-    min-height: 25px;
-    width: 25px;
-    height: 25px;
-    background-color: #5050cc;
-    border: 1px solid yellow;
+    min-width: 30px;
+    min-height: 30px;
+    width: 30px;
+    height: 30px;
+
     border-radius: 8px;
   }
 
   h2 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 8px;
+    font-size: 12px;
     display: flex;
-    background: rgb(116, 46, 207);
+    background: rgb(53, 20, 138);
     background: linear-gradient(
-      180deg,
-      rgba(116, 46, 207, 1) 0%,
-      rgba(167, 108, 130, 1) 54%,
-      rgba(255, 214, 0, 1) 100%
+      90deg,
+      rgba(53, 20, 138, 1) 0%,
+      rgba(217, 61, 61, 1) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;

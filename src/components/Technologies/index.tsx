@@ -1,5 +1,6 @@
 import * as S from './style'
 import TitleTechs from '../../assets/TitleTechs.svg'
+import react from '../../assets/react.png'
 import React from 'react'
 
 export function Technologies() {
@@ -13,7 +14,7 @@ export function Technologies() {
 
       <S.TechsBox>
         <S.Tech>
-          <img src="" alt="" />
+          <img src={react} alt="" />
           <h2>ReactJS</h2>
         </S.Tech>
         <S.Tech>
