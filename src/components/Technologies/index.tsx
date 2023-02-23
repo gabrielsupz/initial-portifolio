@@ -14,6 +14,10 @@ export function Technologies() {
       <S.TechsBox>
         <S.Tech>
           <img src="" alt="" />
+          <h2>ReactJS</h2>
+        </S.Tech>
+        <S.Tech>
+          <img src="" alt="" />
           <h2>Typescript</h2>
         </S.Tech>
         <S.Tech>
@@ -31,6 +35,10 @@ export function Technologies() {
         <S.Tech>
           <img src="" alt="" />
           <h2>CSS</h2>
+        </S.Tech>
+        <S.Tech>
+          <img src="" alt="" />
+          <h2>NodeJS</h2>
         </S.Tech>
         <S.Tech>
           <img src="" alt="" />

@@ -4,7 +4,7 @@ import inventory from '../../assets/inventory.svg'
 export const CharacterRoom = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+
   align-items: center;
   flex-direction: column;
   width: 380px;
@@ -91,4 +91,9 @@ export const BoxItems = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 14px;
+
+  @media screen and (max-width: 400px) {
+    width: 208px;
+    height: 73px;
+  }
 `

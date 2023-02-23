@@ -44,6 +44,12 @@ export const TraitsBox = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
+  @media screen and (max-width: 965px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+  }
   @media screen and (max-width: 450px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

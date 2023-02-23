@@ -38,6 +38,15 @@ export const Techs = styled.div`
 `
 export const TechsBox = styled.div`
   margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  @media screen and (max-width: 950px) {
+    margin-left: 5px;
+    grid-template-columns: repeat(2, 1fr);
+  }
   @media screen and (max-width: 400px) {
     margin-left: 5px;
     display: flexbox;
@@ -47,11 +56,6 @@ export const TechsBox = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
   }
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
 `
 export const Tech = styled.div`
   display: flex;
@@ -89,6 +93,15 @@ export const Tech = styled.div`
   @media screen and (max-width: 400px) {
     h2 {
       font-size: 11px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    h2 {
+      font-size: 10px;
+    }
+    img {
+      width: 25px;
+      height: 25px;
     }
   }
 `

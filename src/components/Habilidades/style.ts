@@ -9,11 +9,11 @@ export const Skills = styled.div`
   height: max-content;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+
   height: max-content;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-bottom: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   img {
     width: 250px;
@@ -49,12 +49,10 @@ export const Skills = styled.div`
   }
 `
 export const SkillsBox = styled.div`
-  margin-top: 80px;
+  margin-top: 30px;
 
   align-items: center;
   justify-content: center;
-  gap: 10px;
-
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 10px;
@@ -63,11 +61,11 @@ export const SkillsBox = styled.div`
 export const Skill = styled.div`
   font-size: 10px;
   display: flex;
-  border: 1px solid violet;
+
   border-radius: 4px;
   align-items: center;
   padding: 5px;
-  gap: 5px;
+  gap: 7px;
 
   img {
     width: 35px;

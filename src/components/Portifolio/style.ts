@@ -8,7 +8,7 @@ export const Portifolio = styled.div`
   align-items: center;
 
   .header {
-    margin: 25px 50px;
+    margin: 20px 50px 40px 50px;
   }
   main {
     display: flex;
@@ -16,6 +16,7 @@ export const Portifolio = styled.div`
     height: 100%;
     justify-content: center;
     gap: 20px;
+    padding-bottom: 20px;
     @media screen and (max-width: 735px) {
       gap: 50px;
     }
@@ -23,6 +24,7 @@ export const Portifolio = styled.div`
   section {
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
 
     div.TraitsAndTechs {
       width: 60%;
@@ -32,7 +34,7 @@ export const Portifolio = styled.div`
     }
   }
 
-  @media screen and (max-width: 735px) {
+  @media screen and (max-width: 1200px) {
     section {
       display: flex;
       justify-content: space-around;
