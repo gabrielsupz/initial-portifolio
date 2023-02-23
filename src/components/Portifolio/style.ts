@@ -14,13 +14,41 @@ export const Portifolio = styled.div`
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+    @media screen and (max-width: 735px) {
+      gap: 50px;
+    }
   }
   section {
     display: flex;
-    flex-direction: column;
-    gap: 100px;
+    justify-content: space-around;
+
+    div.TraitsAndTechs {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
   }
+
+  @media screen and (max-width: 735px) {
+    section {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+
+      div.TraitsAndTechs {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+  }
+
   @media screen and (max-width: 820px) {
     .header {
       margin: 15px;

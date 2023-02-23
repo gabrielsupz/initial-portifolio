@@ -4,6 +4,7 @@ import { CharacterBox } from '../CharacterBox'
 import { Header } from '../Header'
 import { Technologies } from '../Technologies'
 import { Traits } from '../Traits'
+import { Skills } from '../Habilidades'
 
 export function Portifolio() {
   return (
@@ -15,9 +16,12 @@ export function Portifolio() {
         {' '}
         <CharacterBox />
         <section>
-          {' '}
-          <Traits />
-          <Technologies />
+          <div className="TraitsAndTechs">
+            {' '}
+            <Traits />
+            <Technologies />
+          </div>{' '}
+          <Skills />
         </section>
       </main>
     </S.Portifolio>

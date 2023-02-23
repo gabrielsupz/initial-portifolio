@@ -1,20 +1,23 @@
 import styled from 'styled-components'
 
-export const Techs = styled.div`
+export const Skills = styled.div`
   border: 2.5px solid black;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  min-width: 20%;
+  height: max-content;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  position: relative;
-
+  height: max-content;
   padding-bottom: 40px;
   padding-left: 10px;
   padding-right: 10px;
 
+  img {
+    width: 250px;
+  }
   @media screen and (max-width: 374px) {
     width: 100%;
     img {
@@ -27,32 +30,37 @@ export const Techs = styled.div`
       width: 320px;
     }
   }
+  @media screen and (max-width: 735px) {
+    max-width: max-content;
+    padding: 10px 40px 10px 40px;
+    img {
+      width: 371px;
+    }
+  }
+
   @media screen and (max-width: 450px) {
     width: 100%;
   }
+  position: relative;
   .title {
     position: absolute;
     top: -35px;
   }
 `
-export const TechsBox = styled.div`
+export const SkillsBox = styled.div`
   margin-top: 80px;
-  @media screen and (max-width: 400px) {
-    margin-left: 5px;
-    display: flexbox;
-  }
-  @media screen and (max-width: 450px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-  }
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
 `
-export const Tech = styled.div`
+export const Skill = styled.div`
+  font-size: 10px;
   display: flex;
   border: 1px solid violet;
   border-radius: 4px;
@@ -61,21 +69,23 @@ export const Tech = styled.div`
   gap: 5px;
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background-color: #5050cc;
     border: 1px solid yellow;
     border-radius: 8px;
   }
+
   h2 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
-    background: rgb(53, 20, 138);
+    background: rgb(116, 46, 207);
     background: linear-gradient(
-      90deg,
-      rgba(53, 20, 138, 1) 0%,
-      rgba(165, 159, 195, 1) 100%
+      180deg,
+      rgba(116, 46, 207, 1) 0%,
+      rgba(167, 108, 130, 1) 54%,
+      rgba(255, 214, 0, 1) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;

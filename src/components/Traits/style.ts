@@ -5,12 +5,15 @@ export const Traits = styled.div`
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  min-width: 100%;
   height: max-content;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  min-height: 200px;
+  height: max-content;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   @media screen and (max-width: 374px) {
     width: 100%;
     img {
@@ -23,6 +26,9 @@ export const Traits = styled.div`
       width: 320px;
     }
   }
+  @media screen and (max-width: 450px) {
+    width: 100%;
+  }
   position: relative;
   .title {
     position: absolute;
@@ -31,7 +37,9 @@ export const Traits = styled.div`
 `
 export const TraitsBox = styled.div`
   margin-top: 80px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
   align-items: center;
   justify-content: center;
   gap: 10px;
