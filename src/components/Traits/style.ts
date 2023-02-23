@@ -67,6 +67,8 @@ export const Trait = styled.div`
   gap: 5px;
 
   img {
+    min-width: 25px;
+    min-height: 25px;
     width: 25px;
     height: 25px;
     background-color: #5050cc;

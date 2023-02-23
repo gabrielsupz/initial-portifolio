@@ -68,6 +68,8 @@ export const Tech = styled.div`
   img {
     width: 30px;
     height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     background-color: #5050cc;
     border: 1px solid yellow;
     border-radius: 8px;

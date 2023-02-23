@@ -10,7 +10,8 @@ export const Affinitys = styled.div`
   justify-content: center;
   align-items: center;
 
-  height: max-content;
+  height: 100%;
+  min-height: 208px;
   padding-bottom: 7px;
   padding-left: 20px;
   padding-right: 20px;
@@ -59,13 +60,13 @@ export const AffinitysBox = styled.div`
   grid-row-gap: 1em;
 `
 export const Affinity = styled.div`
-  font-size: 10px;
   display: flex;
 
   border-radius: 4px;
   align-items: center;
   padding: 5px;
-  gap: 7px;
+  justify-content: space-between;
+  gap: 10px;
 
   img {
     width: 35px;
@@ -77,7 +78,7 @@ export const Affinity = styled.div`
 
   h2 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+    font-size: 16px;
     display: flex;
     background: rgb(116, 46, 207);
     background: linear-gradient(

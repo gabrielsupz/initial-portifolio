@@ -10,16 +10,12 @@ export function Affinitys() {
 
       <S.AffinitysBox>
         <S.Affinity>
+          <h2>Front-End</h2>
           <img src="" alt="" />
-          <h2>Pesquisa Tech</h2>
         </S.Affinity>
         <S.Affinity>
+          <h2>Back-End</h2>
           <img src="" alt="" />
-          <h2>Refatorar</h2>
-        </S.Affinity>
-        <S.Affinity>
-          <img src="" alt="" />
-          <h2>Concentração</h2>
         </S.Affinity>
       </S.AffinitysBox>
     </S.Affinitys>
