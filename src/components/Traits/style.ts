@@ -14,11 +14,9 @@ export const Traits = styled.div`
   padding-bottom: 40px;
   padding-left: 10px;
   padding-right: 10px;
-  @media screen and (max-width: 374px) {
+
+  @media screen and (max-width: 450px) {
     width: 100%;
-    img {
-      width: 300px;
-    }
   }
   @media screen and (max-width: 400px) {
     width: 100%;
@@ -26,8 +24,11 @@ export const Traits = styled.div`
       width: 320px;
     }
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 374px) {
     width: 100%;
+    img {
+      width: 300px;
+    }
   }
   position: relative;
   .title {

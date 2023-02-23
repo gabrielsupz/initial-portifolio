@@ -18,23 +18,24 @@ export const Skills = styled.div`
   img {
     width: 250px;
   }
-  @media screen and (max-width: 374px) {
-    width: 100%;
+  @media screen and (max-width: 735px) {
+    max-width: max-content;
+    padding: 10px 40px 10px 40px;
     img {
-      width: 300px;
+      width: 371px;
     }
   }
+
   @media screen and (max-width: 400px) {
     width: 100%;
     img {
       width: 320px;
     }
   }
-  @media screen and (max-width: 735px) {
-    max-width: max-content;
-    padding: 10px 40px 10px 40px;
+  @media screen and (max-width: 374px) {
+    width: 100%;
     img {
-      width: 371px;
+      width: 300px;
     }
   }
 

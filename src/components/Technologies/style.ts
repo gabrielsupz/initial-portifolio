@@ -15,20 +15,21 @@ export const Techs = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 
-  @media screen and (max-width: 374px) {
+  @media screen and (max-width: 450px) {
     width: 100%;
-    img {
-      width: 300px;
-    }
   }
+
   @media screen and (max-width: 400px) {
     width: 100%;
     img {
       width: 320px;
     }
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 374px) {
     width: 100%;
+    img {
+      width: 300px;
+    }
   }
   .title {
     position: absolute;
@@ -84,5 +85,10 @@ export const Tech = styled.div`
 
     text-align: center;
     justify-content: center;
+  }
+  @media screen and (max-width: 400px) {
+    h2 {
+      font-size: 11px;
+    }
   }
 `
