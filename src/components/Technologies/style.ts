@@ -59,7 +59,7 @@ export const TechsBox = styled.div`
 `
 export const Tech = styled.div`
   display: flex;
-  border: 1px solid violet;
+
   border-radius: 4px;
   align-items: center;
   padding: 5px;
@@ -88,7 +88,6 @@ export const Tech = styled.div`
     -webkit-text-fill-color: transparent;
     color: black;
 
-    text-align: center;
     justify-content: center;
   }
   @media screen and (max-width: 400px) {
@@ -105,4 +104,48 @@ export const Tech = styled.div`
       height: 25px;
     }
   }
+
+  .teachAndLvl {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .xpAndLvl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    strong {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(214, 212, 212, 1) 12%,
+        rgba(62, 49, 49, 1) 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: black;
+
+      justify-content: center;
+    }
+  }
+`
+export const XPBar = styled.div`
+  color: black;
+  height: 10px;
+  width: 80px;
+  font-size: 7px;
+  border: 2px solid #06000a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(64, 63, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(64, 63, 195, 1) 0%,
+    rgba(79, 78, 200, 1) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
 `
