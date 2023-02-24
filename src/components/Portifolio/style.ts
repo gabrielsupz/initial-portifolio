@@ -31,7 +31,7 @@ export const Portifolio = styled.div`
       width: 60%;
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 40px;
     }
 
     div.SkillsAndAffinitys {

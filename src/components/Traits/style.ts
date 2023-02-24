@@ -11,7 +11,7 @@ export const Traits = styled.div`
   align-items: center;
   gap: 20px;
   height: max-content;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
 

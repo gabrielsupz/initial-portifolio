@@ -11,7 +11,7 @@ export const Techs = styled.div`
   gap: 20px;
   position: relative;
 
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 
