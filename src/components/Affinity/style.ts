@@ -79,12 +79,12 @@ export const Affinity = styled.div`
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
     display: flex;
-    background: rgb(116, 46, 207);
+    background: rgb(255, 255, 255);
     background: linear-gradient(
-      180deg,
-      rgba(116, 46, 207, 1) 0%,
-      rgba(167, 108, 130, 1) 54%,
-      rgba(255, 214, 0, 1) 100%
+      0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(214, 212, 212, 1) 0%,
+      rgba(62, 49, 49, 1) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;

@@ -61,7 +61,7 @@ export const SkillsBox = styled.div`
 export const Skill = styled.div`
   font-size: 10px;
   display: flex;
-
+  justify-content: space-between;
   border-radius: 4px;
   align-items: center;
   padding: 5px;
