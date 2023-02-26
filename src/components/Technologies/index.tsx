@@ -35,6 +35,20 @@ export function Technologies() {
           </div>
         </S.Tech>
         <S.Tech>
+          <img src={html} alt="Imagem da logo do HTML" />
+
+          <div className="teachAndLvl">
+            <h2 className="notranslate" translate="no">
+              HTML
+            </h2>
+            <div className="xpAndLvl">
+              <S.XPBar>xp</S.XPBar>
+
+              <strong>Lv:55</strong>
+            </div>
+          </div>
+        </S.Tech>{' '}
+        <S.Tech>
           <img src={typescript} alt="Imagem da logo do Typescript" />
 
           <div className="teachAndLvl">
@@ -45,6 +59,20 @@ export function Technologies() {
               <S.XPBar>xp</S.XPBar>
 
               <strong>Lv:27</strong>
+            </div>
+          </div>
+        </S.Tech>
+        <S.Tech>
+          <img src={css} alt="Imagem da logo do CSS" />
+
+          <div className="teachAndLvl">
+            <h2 className="notranslate" translate="no">
+              CSS
+            </h2>
+            <div className="xpAndLvl">
+              <S.XPBar>xp</S.XPBar>
+
+              <strong>Lv:50</strong>
             </div>
           </div>
         </S.Tech>
@@ -73,34 +101,6 @@ export function Technologies() {
               <S.XPBar>xp</S.XPBar>
 
               <strong>Lv:17</strong>
-            </div>
-          </div>
-        </S.Tech>
-        <S.Tech>
-          <img src={html} alt="Imagem da logo do HTML" />
-
-          <div className="teachAndLvl">
-            <h2 className="notranslate" translate="no">
-              HTML
-            </h2>
-            <div className="xpAndLvl">
-              <S.XPBar>xp</S.XPBar>
-
-              <strong>Lv:55</strong>
-            </div>
-          </div>
-        </S.Tech>
-        <S.Tech>
-          <img src={css} alt="Imagem da logo do CSS" />
-
-          <div className="teachAndLvl">
-            <h2 className="notranslate" translate="no">
-              CSS
-            </h2>
-            <div className="xpAndLvl">
-              <S.XPBar>xp</S.XPBar>
-
-              <strong>Lv:50</strong>
             </div>
           </div>
         </S.Tech>
@@ -137,7 +137,6 @@ export function Technologies() {
             </div>
           </div>
         </S.Tech>
-
         <S.Tech>
           <img src={popper} alt="Imagem da logo do React Popper" />
 

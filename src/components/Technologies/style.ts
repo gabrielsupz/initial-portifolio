@@ -27,10 +27,13 @@ export const Techs = styled.div`
   }
   @media screen and (max-width: 374px) {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
     img {
       width: 300px;
     }
   }
+
   .title {
     position: absolute;
     top: -35px;
@@ -55,6 +58,11 @@ export const TechsBox = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 330px) {
+    grid-column-gap: 5px;
   }
 `
 export const Tech = styled.div`
@@ -91,6 +99,7 @@ export const Tech = styled.div`
     justify-content: center;
   }
   @media screen and (max-width: 400px) {
+    padding: 0;
     h2 {
       font-size: 11px;
     }

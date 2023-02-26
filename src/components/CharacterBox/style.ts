@@ -7,14 +7,16 @@ export const CharacterRoom = styled.div`
 
   align-items: center;
   flex-direction: column;
-  width: 380px;
+  width: 400px;
 
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
   gap: 5px;
   @media screen and (max-width: 400px) {
     width: 350px;
+    padding-left: 0;
   }
   @media screen and (max-width: 374px) {
     max-width: 100vw;
