@@ -1,6 +1,7 @@
 import { useCharacter } from '../../Contexts/Context'
 import * as S from './style'
 import book from '../../assets/book.svg'
+import coffee from '../../assets/coffee.png'
 
 export function Stats() {
   const { items, setItems } = useCharacter()
@@ -54,7 +55,7 @@ export function Stats() {
           <li>
             <img src={book} alt="icone de livro aberto" />
             <div>
-              <p>Junior Developer</p>
+              <p>Jr. Devoloper</p>
               <S.DEVBar>
                 <h3>xp</h3>
               </S.DEVBar>
@@ -118,13 +119,16 @@ export function Stats() {
           <li>
             <img src="src\assets\class.svg" alt="icone de livro fechado" />
             <div>
-              <h3 className="class">Classe:</h3> <p>Developer (Coffe)</p>{' '}
+              <h3 className="class">Classe:</h3>{' '}
+              <p>
+                Developer <img src={coffee} alt="" />
+              </p>{' '}
             </div>
           </li>
           <li>
             <img src={book} alt="icone de livro aberto" />
             <div>
-              <p>Junior Developer</p>
+              <p>Jr. Devoloper</p>
               <S.DEVBar>
                 <h3>xp</h3>
               </S.DEVBar>
@@ -184,7 +188,7 @@ export function Stats() {
         <li>
           <img src={book} alt="icone de livro aberto" />
           <div>
-            <p>Junior Developer</p>
+            <p>Jr. Devoloper</p>
             <S.DEVBar>
               <h3>xp</h3>
             </S.DEVBar>

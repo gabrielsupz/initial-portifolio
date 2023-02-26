@@ -24,7 +24,9 @@ export function Technologies() {
         <S.Tech>
           <img src={react} alt="Imagem da logo do ReactJS" />
           <div className="teachAndLvl">
-            <h2>ReactJS</h2>
+            <h2 className="notranslate" translate="no">
+              ReactJS
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -36,7 +38,9 @@ export function Technologies() {
           <img src={typescript} alt="Imagem da logo do Typescript" />
 
           <div className="teachAndLvl">
-            <h2>Typescript</h2>
+            <h2 className="notranslate" translate="no">
+              Typescript
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -48,7 +52,9 @@ export function Technologies() {
           <img src={javascript} alt="Imagem da logo do JavaScript" />
 
           <div className="teachAndLvl">
-            <h2>Javascript</h2>
+            <h2 className="notranslate" translate="no">
+              Javascript
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -60,7 +66,9 @@ export function Technologies() {
           <img src={firebase} alt="Imagem da logo do firebase" />
 
           <div className="teachAndLvl">
-            <h2>Firebase</h2>
+            <h2 className="notranslate" translate="no">
+              Firebase
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -72,7 +80,9 @@ export function Technologies() {
           <img src={html} alt="Imagem da logo do HTML" />
 
           <div className="teachAndLvl">
-            <h2>HTML</h2>
+            <h2 className="notranslate" translate="no">
+              HTML
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -84,7 +94,9 @@ export function Technologies() {
           <img src={css} alt="Imagem da logo do CSS" />
 
           <div className="teachAndLvl">
-            <h2>CSS</h2>
+            <h2 className="notranslate" translate="no">
+              CSS
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -99,7 +111,9 @@ export function Technologies() {
           />
 
           <div className="teachAndLvl">
-            <h2>Styled-Components</h2>
+            <h2 className="notranslate" translate="no">
+              Styled-Components
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -113,7 +127,9 @@ export function Technologies() {
             alt="Imagem da logo da biblioteca React Router"
           />
           <div className="teachAndLvl">
-            <h2>React Router</h2>
+            <h2 className="notranslate" translate="no">
+              React Router
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
@@ -126,7 +142,9 @@ export function Technologies() {
           <img src={popper} alt="Imagem da logo do React Popper" />
 
           <div className="teachAndLvl">
-            <h2>React Popper</h2>
+            <h2 className="notranslate" translate="no">
+              React Popper
+            </h2>
             <div className="xpAndLvl">
               <S.XPBar>xp</S.XPBar>
 
