@@ -69,10 +69,9 @@ export const Affinity = styled.div`
   gap: 10px;
 
   img {
-    width: 35px;
-    height: 35px;
-    background-color: #5050cc;
-    border: 1px solid yellow;
+    width: 40px;
+    height: 40px;
+
     border-radius: 8px;
   }
 
