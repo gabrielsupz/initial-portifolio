@@ -15,6 +15,11 @@ export const Traits = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 
+  img {
+    width: 372px;
+    height: 102px;
+  }
+
   @media screen and (max-width: 450px) {
     width: 100%;
   }
