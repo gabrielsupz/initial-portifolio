@@ -15,6 +15,13 @@ export const Affinitys = styled.div`
   padding-bottom: 7px;
   padding-left: 20px;
   padding-right: 20px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(4, 93, 16, 1) 0%,
+    rgba(1, 36, 1, 1) 100%
+  );
 
   img {
     width: 250px;

@@ -14,7 +14,13 @@ export const Traits = styled.div`
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(50, 23, 149, 1) 0%,
+    rgba(21, 1, 36, 1) 100%
+  );
   img {
     width: 372px;
     height: 102px;
@@ -84,11 +90,11 @@ export const Trait = styled.div`
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
     display: flex;
-    background: rgb(53, 20, 138);
+    background: rgb(11, 141, 142);
     background: linear-gradient(
-      90deg,
-      rgba(53, 20, 138, 1) 0%,
-      rgba(217, 61, 61, 1) 100%
+      332deg,
+      rgba(11, 141, 142, 1) 0%,
+      rgba(155, 196, 223, 1) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;

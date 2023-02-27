@@ -15,6 +15,14 @@ export const Techs = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(23, 149, 133, 1) 0%,
+    rgba(1, 36, 33, 1) 100%
+  );
+
   @media screen and (max-width: 450px) {
     width: 100%;
   }
@@ -85,11 +93,11 @@ export const Tech = styled.div`
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
     display: flex;
-    background: rgb(53, 20, 138);
-    background: linear-gradient(
-      90deg,
-      rgba(53, 20, 138, 1) 0%,
-      rgba(165, 159, 195, 1) 100%
+    background: rgb(5, 61, 50);
+    background: radial-gradient(
+      circle,
+      rgba(5, 61, 50, 1) 0%,
+      rgba(0, 0, 0, 1) 100%
     );
     background-clip: text;
     -webkit-background-clip: text;
@@ -125,13 +133,8 @@ export const Tech = styled.div`
     justify-content: center;
 
     strong {
-      background: rgb(255, 255, 255);
-      background: linear-gradient(
-        270deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(214, 212, 212, 1) 12%,
-        rgba(62, 49, 49, 1) 100%
-      );
+      background: black;
+
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;

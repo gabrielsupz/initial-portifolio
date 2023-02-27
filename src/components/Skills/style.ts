@@ -15,6 +15,14 @@ export const Skills = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(149, 23, 23, 1) 0%,
+    rgba(36, 1, 1, 1) 100%
+  );
+
   img {
     width: 250px;
   }

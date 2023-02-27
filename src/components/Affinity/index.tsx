@@ -1,5 +1,5 @@
 import * as S from './style'
-import TitleTechs from '../../assets/TitleTechs.svg'
+import affinity from '../../assets/affinity.svg'
 import back from '../../assets/back.png'
 import front from '../../assets/front-affinity.png'
 
@@ -8,7 +8,7 @@ import React from 'react'
 export function Affinitys() {
   return (
     <S.Affinitys>
-      <img className="title" src={TitleTechs} alt="" />
+      <img className="title" src={affinity} alt="" />
 
       <S.AffinitysBox>
         <S.Affinity>
