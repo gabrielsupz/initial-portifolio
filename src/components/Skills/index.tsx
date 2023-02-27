@@ -1,5 +1,5 @@
 import * as S from './style'
-import TitleTechs from '../../assets/TitleTechs.svg'
+import skills from '../../assets/skills.svg'
 import search from '../../assets/search.png'
 import refactor from '../../assets/refactor.png'
 import concentration from '../../assets/concentration.png'
@@ -9,7 +9,7 @@ import React from 'react'
 export function Skills() {
   return (
     <S.Skills>
-      <img className="title" src={TitleTechs} alt="Título Skills" />
+      <img className="title" src={skills} alt="Título Skills" />
 
       <S.SkillsBox>
         <S.Skill>
