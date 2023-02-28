@@ -1,7 +1,8 @@
 import * as S from './style'
 import React from 'react'
-import { Phrases } from '../Phrases'
+
 import { Stats } from '../Stats'
+import { Phrases } from '../Phrases'
 
 export function CharacterBox() {
   return (
