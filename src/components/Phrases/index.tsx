@@ -7,7 +7,7 @@ export function Phrases() {
   if (items === 'Standard') {
     return (
       <S.Phrases>
-        <p>Olá! Parece um ótimo dia para colocar a mão no código não acha? </p>
+        <p>Olá! Parece um ótimo dia para colocar a mão no código não acha?</p>
       </S.Phrases>
     )
   }
@@ -41,14 +41,16 @@ export function Phrases() {
   if (items === 'Unknown') {
     return (
       <S.Phrases>
-        <p>Olá! Parece um ótimo dia para colocar a mão no código não acha? </p>
+        <p>Olá! Parece um ótimo </p>
+        <p>dia para colocar a mão no código não acha?</p>
       </S.Phrases>
     )
   }
 
   return (
     <S.Phrases>
-      <p>Olá! Parece um ótimo dia para colocar a mão no código não acha? </p>
+      <p>Olá! Parece um ótimo </p>
+      <p>dia para colocar a mão no código não acha?</p>
     </S.Phrases>
   )
 }
