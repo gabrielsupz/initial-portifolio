@@ -22,5 +22,16 @@ export const Phrases = styled.div`
     justify-content: center;
     text-shadow: 1px 1px 2px red, 0 0 3px yellow;
     font-size: 15px;
+    /* background: rgb(118, 33, 226);
+    background: linear-gradient(
+      170deg,
+      rgba(118, 33, 226, 1) 0%,
+      rgba(228, 18, 95, 1) 28%,
+      rgba(241, 114, 48, 1) 65%,
+      rgba(255, 214, 0, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
   }
 `

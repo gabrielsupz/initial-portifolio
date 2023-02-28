@@ -10,7 +10,9 @@ export function Phrases() {
       <S.Phrases>
         <p>
           <TypeIt>
-            Olá! Parece um ótimo dia para colocar a mão no código não acha?
+            {/* Olá! Parece um ótimo dia para colocar a mão no código não acha? */}
+            Com a biblioteca TypeItJS você pode fazer animações de texto de
+            forma facil! Fica a dica!
           </TypeIt>
         </p>
       </S.Phrases>
