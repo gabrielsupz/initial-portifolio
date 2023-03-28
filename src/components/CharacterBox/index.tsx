@@ -6,7 +6,6 @@ import { Phrases } from '../Phrases'
 import { ItemsProps, useCharacter } from '../../Contexts/Context'
 
 export function CharacterBox() {
-  console.log('No futuro terminarei está aplicação hehehe')
   const { items, setItems } = useCharacter()
 
   return (

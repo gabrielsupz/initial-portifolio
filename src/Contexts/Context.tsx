@@ -2,7 +2,7 @@ import React, { ReactNode, useContext, useState } from 'react'
 
 // Criando valor inicial
 
-export type ItemsProps = 'Standard' | 'Coffee' | 'Game' | 'Contract' | 'Unknown'
+export type ItemsProps = 'Standard' | 'Game' | 'Coffee' | 'Contract' | 'Unknown'
 
 type UserContextType = {
   items: ItemsProps

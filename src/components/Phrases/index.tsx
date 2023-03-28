@@ -6,8 +6,6 @@ import { useEffect } from 'react'
 export function Phrases() {
   const { items, setItems } = useCharacter()
 
-  useEffect(() => {}, [setItems])
-
   if (items === 'Standard') {
     return (
       <S.Phrases>

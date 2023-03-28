@@ -1,7 +1,7 @@
 import { useCharacter } from '../../Contexts/Context'
 import * as S from './style'
 import book from '../../assets/book.svg'
-import coffee from '../../assets/coffee.png'
+import cafe from '../../assets/coffee.png'
 import math from '../../assets/math.png'
 
 export function Stats() {
@@ -132,8 +132,7 @@ export function Stats() {
             <div>
               <h3 className="class">Classe:</h3>{' '}
               <p>
-                Developer{' '}
-                <img src={coffee} alt="imagem de uma xicara de café" />
+                Developer <img src={cafe} alt="imagem de uma xicara de café" />
               </p>{' '}
             </div>
           </li>
