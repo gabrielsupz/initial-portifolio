@@ -5,7 +5,7 @@ import { Stats } from '../Stats'
 import { Phrases } from '../Phrases'
 
 export function CharacterBox() {
-  console.log('No futuro termianrei está aplicação hehehe')
+  console.log('No futuro terminarei está aplicação hehehe')
 
   return (
     <S.CharacterRoom>
