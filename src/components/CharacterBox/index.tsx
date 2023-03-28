@@ -1,11 +1,13 @@
 import * as S from './style'
 import React from 'react'
-
+import heart from '../../assets/heartDev.png'
 import { Stats } from '../Stats'
 import { Phrases } from '../Phrases'
+import { useCharacter } from '../../Contexts/Context'
 
 export function CharacterBox() {
   console.log('No futuro terminarei está aplicação hehehe')
+  const { items, setItems } = useCharacter()
 
   return (
     <S.CharacterRoom>
@@ -15,9 +17,21 @@ export function CharacterBox() {
             <img src="src\assets\profile.svg" alt="" />
           </div>
           <div className="info">
-            {' '}
             <Stats />
-            <S.BoxItems></S.BoxItems>
+            <S.BoxItems>
+              <button onClick={() => setItems('Coffe')}>
+                <img src={heart} alt="" />
+              </button>
+              <button onClick={() => setItems('Contract')}>
+                <img src={heart} alt="" />
+              </button>
+              <button onClick={() => setItems('Game')}>
+                <img src={heart} alt="" />
+              </button>
+              <button onClick={() => setItems('Unknown')}>
+                <img src={heart} alt="" />
+              </button>
+            </S.BoxItems>
           </div>{' '}
         </div>
       </S.CharacterName>

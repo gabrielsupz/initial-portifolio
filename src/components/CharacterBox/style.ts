@@ -93,6 +93,10 @@ export const BoxItems = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 14px;
+  button {
+    background: none;
+    border-style: none;
+  }
 
   @media screen and (max-width: 400px) {
     width: 208px;
