@@ -2,6 +2,7 @@ import { useCharacter } from '../../Contexts/Context'
 import * as S from './style'
 import book from '../../assets/book.svg'
 import coffee from '../../assets/coffee.png'
+import math from '../../assets/math.png'
 
 export function Stats() {
   const { items, setItems } = useCharacter()
@@ -38,7 +39,10 @@ export function Stats() {
             <div>
               <S.TagAndNumber>
                 {' '}
-                <h3>INT</h3> <h3> 67</h3>
+                <h3>
+                  INT <img src={math} alt="Sinal de soma" />
+                </h3>{' '}
+                <h3> 67</h3>
               </S.TagAndNumber>
               <S.INTBar>
                 <h3>xp</h3>
@@ -49,7 +53,12 @@ export function Stats() {
           <li>
             <img src="src\assets\class.svg" alt="icone de livro fechado" />
             <div>
-              <h3 className="class">Classe:</h3> <p>Developer </p>{' '}
+              <h3 className="class">Classe:</h3>{' '}
+              <p>
+                Developer{' '}
+                <img className="math" src={math} alt="Sinal de soma" />{' '}
+                <img className="math" src={math} alt="Sinal de soma" />{' '}
+              </p>{' '}
             </div>
           </li>
           <li>
@@ -104,7 +113,9 @@ export function Stats() {
             <div>
               <S.TagAndNumber>
                 {' '}
-                <h3>INT</h3>{' '}
+                <h3>
+                  INT <img src={math} alt="Ícone de uma estrela" />
+                </h3>{' '}
                 <h3>
                   {' '}
                   <strong>80</strong>{' '}
@@ -121,7 +132,8 @@ export function Stats() {
             <div>
               <h3 className="class">Classe:</h3>{' '}
               <p>
-                Developer <img src={coffee} alt="" />
+                Developer{' '}
+                <img src={coffee} alt="imagem de uma xicara de café" />
               </p>{' '}
             </div>
           </li>
@@ -171,7 +183,10 @@ export function Stats() {
           <div>
             <S.TagAndNumber>
               {' '}
-              <h3>INT</h3> <h3> 67</h3>
+              <h3>
+                INT <img src={math} alt="Ícone de uma estrela" />
+              </h3>{' '}
+              <h3> 67</h3>
             </S.TagAndNumber>
             <S.INTBar>
               <h3>xp</h3>
@@ -182,7 +197,11 @@ export function Stats() {
         <li>
           <img src="src\assets\class.svg" alt="icone de livro fechado" />
           <div>
-            <h3 className="class">Classe:</h3> <p>Developer </p>{' '}
+            <h3 className="class">Classe:</h3>{' '}
+            <p>
+              Developer <img className="math" src={math} alt="Sinal de soma" />{' '}
+              <img className="math" src={math} alt="Sinal de soma" />{' '}
+            </p>{' '}
           </div>
         </li>
         <li>

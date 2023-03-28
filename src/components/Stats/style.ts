@@ -17,6 +17,18 @@ export const Stats = styled.div`
       width: 40px;
       height: 40px;
     }
+
+    h3 {
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    img.math {
+      width: 12px;
+      height: 12px;
+    }
   }
 
   li {
