@@ -74,7 +74,7 @@ export function Stats() {
       </S.Stats>
     )
   }
-  if (items === 'Coffe') {
+  if (items === 'Coffee') {
     return (
       <S.Stats>
         <ul>

@@ -1,9 +1,9 @@
 import * as S from './style'
-import React from 'react'
+import React, { useEffect } from 'react'
 import heart from '../../assets/heartDev.png'
 import { Stats } from '../Stats'
 import { Phrases } from '../Phrases'
-import { useCharacter } from '../../Contexts/Context'
+import { ItemsProps, useCharacter } from '../../Contexts/Context'
 
 export function CharacterBox() {
   console.log('No futuro terminarei está aplicação hehehe')
@@ -19,7 +19,7 @@ export function CharacterBox() {
           <div className="info">
             <Stats />
             <S.BoxItems>
-              <button onClick={() => setItems('Coffe')}>
+              <button onClick={() => setItems('Coffee')}>
                 <img src={heart} alt="" />
               </button>
               <button onClick={() => setItems('Contract')}>
@@ -35,6 +35,7 @@ export function CharacterBox() {
           </div>{' '}
         </div>
       </S.CharacterName>
+
       <Phrases />
     </S.CharacterRoom>
   )

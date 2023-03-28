@@ -1,37 +1,31 @@
 import { useCharacter } from '../../Contexts/Context'
 import * as S from './style'
 import TypeIt from 'typeit-react'
+import { useEffect } from 'react'
 
 export function Phrases() {
   const { items, setItems } = useCharacter()
+
+  useEffect(() => {}, [setItems])
 
   if (items === 'Standard') {
     return (
       <S.Phrases>
         <p>
           <TypeIt>
-            {/* Olá! Parece um ótimo dia para colocar a mão no código não acha? */}
-            O bom filho a casa retorna!
+            Olá! Parece um ótimo dia para colocar a mão no código não acha?
           </TypeIt>
         </p>
       </S.Phrases>
     )
   }
-  if (items === 'Coffe') {
-    return (
-      <S.Phrases>
-        <TypeIt>
-          <p>Ahaha! Agora sim! Modo turbo!</p>
-        </TypeIt>
-      </S.Phrases>
-    )
-  }
+
   if (items === 'Contract') {
     return (
       <S.Phrases>
         <p>
           <TypeIt>
-            Um contrato? Desde que não queira minha alma , o resto podemos
+            Um contrato? Desde que não queira minha alma, o resto podemos
             negociar!
           </TypeIt>
         </p>
@@ -55,12 +49,20 @@ export function Phrases() {
     return (
       <S.Phrases>
         <p>
-          <TypeIt>O mundo é meu hahaha!</TypeIt>
+          <TypeIt>Hmm... oque será que vem ai?</TypeIt>
         </p>
       </S.Phrases>
     )
   }
-
+  if (items === 'Coffee') {
+    return (
+      <S.Phrases>
+        <TypeIt>
+          <p>Ahaha! Agora sim! Modo turbo!</p>
+        </TypeIt>
+      </S.Phrases>
+    )
+  }
   return (
     <S.Phrases>
       <p>

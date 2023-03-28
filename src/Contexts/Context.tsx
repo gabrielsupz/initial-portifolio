@@ -2,9 +2,9 @@ import React, { ReactNode, useContext, useState } from 'react'
 
 // Criando valor inicial
 
-type ItemsProps = 'Standard' | 'Coffe' | 'Game' | 'Contract' | 'Unknown'
+export type ItemsProps = 'Standard' | 'Coffee' | 'Game' | 'Contract' | 'Unknown'
 
-type UserCOntextType = {
+type UserContextType = {
   items: ItemsProps
   setItems: (value: ItemsProps) => void
 }
@@ -16,7 +16,7 @@ const initialValue = {
   setItems: () => {}
 }
 export const CharacterContext =
-  React.createContext<UserCOntextType>(initialValue)
+  React.createContext<UserContextType>(initialValue)
 
 interface IProps {
   children: ReactNode
