@@ -2,18 +2,18 @@ import React, { ReactNode, useContext, useState } from 'react'
 
 // Criando valor inicial
 
-export type ItensProps = 'Standard' | 'Game' | 'Coffee' | 'Contract' | 'Unknown'
+export type ItemsProps = 'Standard' | 'Game' | 'Coffee' | 'Contract' | 'Unknown'
 
 type UserContextType = {
-  itens: ItensProps
-  setItens: (value: ItensProps) => void
+  items: ItemsProps
+  setItems: (value: ItemsProps) => void
 }
 
-const item: ItensProps = 'Standard'
+const item: ItemsProps = 'Standard'
 
 const initialValue = {
-  itens: item,
-  setItens: () => {}
+  items: item,
+  setItems: () => {}
 }
 export const CharacterContext =
   React.createContext<UserContextType>(initialValue)
@@ -27,10 +27,10 @@ export const useCharacter = () => {
   return context
 }
 export const CharacterProvider = ({ children }: IProps) => {
-  const [itens, setItens] = useState<ItensProps>('Standard')
+  const [items, setItems] = useState<ItemsProps>('Standard')
 
   return (
-    <CharacterContext.Provider value={{ itens, setItens }}>
+    <CharacterContext.Provider value={{ items, setItems }}>
       {children}
     </CharacterContext.Provider>
   )

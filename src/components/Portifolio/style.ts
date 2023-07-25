@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import sla from '../../assets/sla.jpg'
 export const Portifolio = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,23 +12,39 @@ export const Portifolio = styled.div`
   }
   main {
     display: flex;
-    width: 100%;
-    height: 100%;
+    flex-direction: column;
+    width: max-content;
+    max-width: fit-content;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     padding-bottom: 20px;
+    gap: 100px;
+
     @media screen and (max-width: 735px) {
       gap: 50px;
     }
   }
-  section {
+
+  section#presentation {
+    height: 700px;
+    width: 100%;
+    background-image: var(--image-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  section#devInfo {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     margin-top: 10px;
     gap: 20px;
+    width: 100%;
 
     div.TraitsAndTechs {
-      width: 60%;
+      width: 40%;
       display: flex;
       flex-direction: column;
       gap: 40px;

@@ -13,13 +13,15 @@ export function Portifolio() {
 
   return (
     <S.Portifolio>
-      <div className="header">
-        <Header />
-      </div>
       <main>
-        {' '}
-        <CharacterBox />
-        <section>
+        <section id="presentation">
+          <div className="header">
+            <Header />
+          </div>
+          <div></div>
+        </section>
+        <section id="devInfo">
+          <CharacterBox />
           <div className="TraitsAndTechs">
             {' '}
             <Traits />
