@@ -7,6 +7,7 @@ import { Traits } from '../Traits'
 import { Skills } from '../Skills'
 import { Affinitys } from '../Affinity'
 import { useCharacter } from '../../Contexts/Context'
+import TypeIt from 'typeit-react'
 
 export function Portifolio() {
   const { items } = useCharacter()
@@ -18,7 +19,18 @@ export function Portifolio() {
           <div className="header">
             <Header />
           </div>
-          <div></div>
+          <p id="phrasePresentation">
+            {/* <span>
+              Bem vindo ao portifólio, heróis, desafios e aventuras lhe
+              aguardam. Não estou falando de um mundo de fantasia, mas da rotina
+              de um DEV.
+            </span> */}
+            <TypeIt>
+              Bem vindo ao portifólio, heróis, desafios e aventuras lhe
+              aguardam. Não estou falando de um mundo de fantasia, mas da rotina
+              de um DEV.
+            </TypeIt>
+          </p>
         </section>
         <section id="devInfo">
           <CharacterBox />

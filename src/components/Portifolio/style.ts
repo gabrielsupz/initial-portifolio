@@ -27,12 +27,54 @@ export const Portifolio = styled.div`
   }
 
   section#presentation {
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    height: 706px;
     width: 100%;
     background-image: var(--image-background);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    gap: 100px;
+
+    p {
+      width: 50%;
+      margin-left: 10%;
+      margin-top: 15%;
+      font-size: 40px;
+      font-family: 'VT323', monospace;
+      font-weight: 400;
+      align-self: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    section p#phrasePresentation {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    p#phrasePresentation {
+      width: 80%;
+      span {
+        font-size: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    section {
+      justify-content: flex-start;
+    }
+    section p#phrasePresentation {
+      width: 90%;
+
+      margin: 40% auto auto auto;
+    }
+    section p#phrasePresentation span {
+      font-size: 20px;
+    }
   }
 
   section#devInfo {
@@ -95,6 +137,13 @@ export const Portifolio = styled.div`
       align-items: center;
       justify-content: center;
       flex-direction: column;
+    }
+
+    p#phrasePresentation {
+      width: 80%;
+      span {
+        font-size: 30px;
+      }
     }
   }
 `

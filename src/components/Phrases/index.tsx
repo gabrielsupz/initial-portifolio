@@ -4,9 +4,9 @@ import TypeIt from 'typeit-react'
 import { useEffect } from 'react'
 
 export function Phrases() {
-  const { itens, setItens } = useCharacter()
+  const { items, setItems } = useCharacter()
 
-  if (itens === 'Standard') {
+  if (items === 'Standard') {
     return (
       <S.Phrases>
         <p>
@@ -18,7 +18,7 @@ export function Phrases() {
     )
   }
 
-  if (itens === 'Contract') {
+  if (items === 'Contract') {
     return (
       <S.Phrases>
         <p>
@@ -30,7 +30,7 @@ export function Phrases() {
       </S.Phrases>
     )
   }
-  if (itens === 'Game') {
+  if (items === 'Game') {
     return (
       <S.Phrases>
         <p>
@@ -43,7 +43,7 @@ export function Phrases() {
       </S.Phrases>
     )
   }
-  if (itens === 'Unknown') {
+  if (items === 'Unknown') {
     return (
       <S.Phrases>
         <p>
@@ -52,7 +52,7 @@ export function Phrases() {
       </S.Phrases>
     )
   }
-  if (itens === 'Coffee') {
+  if (items === 'Coffee') {
     return (
       <S.Phrases>
         <TypeIt>
