@@ -27,6 +27,12 @@ export const Portifolio = styled.div`
   }
 
   section#presentation {
+    #dragon {
+      height: auto;
+      width: 400px;
+      position: absolute;
+    }
+
     display: flex;
     flex-direction: column;
     height: 706px;

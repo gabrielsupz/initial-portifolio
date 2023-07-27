@@ -7,6 +7,7 @@ import { Traits } from '../Traits'
 import { Skills } from '../Skills'
 import { Affinitys } from '../Affinity'
 import { useCharacter } from '../../Contexts/Context'
+import dragon from '../../assets/dragon.gif'
 import TypeIt from 'typeit-react'
 
 export function Portifolio() {
@@ -19,7 +20,8 @@ export function Portifolio() {
           <div className="header">
             <Header />
           </div>
-          <p id="phrasePresentation">
+          <img id="dragon" src={dragon} alt="" />
+          <p>
             {/* <span>
               Bem vindo ao portifólio, heróis, desafios e aventuras lhe
               aguardam. Não estou falando de um mundo de fantasia, mas da rotina
