@@ -13,8 +13,7 @@ export const Portifolio = styled.div`
   main {
     display: flex;
     flex-direction: column;
-    width: max-content;
-    max-width: fit-content;
+
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -43,7 +42,6 @@ export const Portifolio = styled.div`
     background-position: center;
 
     gap: 100px;
-
     p {
       width: 50%;
       margin-left: 10%;
@@ -82,17 +80,22 @@ export const Portifolio = styled.div`
       font-size: 20px;
     }
   }
+  @media screen and (max-width: 375px) {
+    section p#phrasePresentation {
+      padding: 30px;
+    }
+  }
 
   section#devInfo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    gap: 20px;
+    gap: 80px;
     width: 100%;
 
     div.TraitsAndTechs {
-      width: 40%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -143,13 +146,6 @@ export const Portifolio = styled.div`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-    }
-
-    p#phrasePresentation {
-      width: 80%;
-      span {
-        font-size: 30px;
-      }
     }
   }
 `

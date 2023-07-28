@@ -9,6 +9,8 @@ import { Affinitys } from '../Affinity'
 import { useCharacter } from '../../Contexts/Context'
 import dragon from '../../assets/dragon.gif'
 import TypeIt from 'typeit-react'
+import { DragonRoom } from '../DragonRoom'
+import { KnightRoom } from '../KnightRoom'
 
 export function Portifolio() {
   const { items } = useCharacter()
@@ -20,8 +22,8 @@ export function Portifolio() {
           <div className="header">
             <Header />
           </div>
-          <img id="dragon" src={dragon} alt="" />
-          <p>
+
+          <p id="phrasePresentation">
             {/* <span>
               Bem vindo ao portifólio, heróis, desafios e aventuras lhe
               aguardam. Não estou falando de um mundo de fantasia, mas da rotina
@@ -47,6 +49,9 @@ export function Portifolio() {
             <Affinitys />
           </div>
         </section>
+
+        <DragonRoom />
+        <KnightRoom />
       </main>
     </S.Portifolio>
   )
