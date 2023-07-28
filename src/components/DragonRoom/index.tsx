@@ -7,8 +7,10 @@ import TypeIt from 'typeit-react'
 export function DragonRoom() {
   return (
     <S.DragonRoom>
-      <h2>Dragon's Room</h2>
-      <img src={dragon} alt="" />
+      <div>
+        <h2>Dragon's Room</h2>
+        <img src={dragon} alt="" />
+      </div>
     </S.DragonRoom>
   )
 }

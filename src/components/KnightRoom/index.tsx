@@ -7,8 +7,10 @@ import TypeIt from 'typeit-react'
 export function KnightRoom() {
   return (
     <S.KnightRoom>
-      <h2>Knight's Room</h2>
-      <img src={knight} alt="" />
+      <div>
+        <h2>Knight's Room</h2>
+        <img src={knight} alt="" />
+      </div>
     </S.KnightRoom>
   )
 }
