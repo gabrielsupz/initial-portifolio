@@ -31,11 +31,13 @@ export const Portifolio = styled.div`
       width: 400px;
       position: absolute;
     }
-
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 grey;
+    transition: all 0.5s;
     display: flex;
     flex-direction: column;
-    height: 706px;
-    width: 100%;
+    margin-top: 15px;
+    height: 90vh;
+    width: 90%;
     background-image: var(--image-background);
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,6 +45,7 @@ export const Portifolio = styled.div`
 
     gap: 100px;
     p {
+      color: black;
       width: 50%;
       margin-left: 10%;
       margin-top: 15%;
@@ -51,6 +54,10 @@ export const Portifolio = styled.div`
       font-weight: 400;
       align-self: flex-start;
     }
+  }
+  section#presentation:hover {
+    transition: all 0.5s;
+    box-shadow: 0 4px 8px 0 white, 5px 6px 20px 0 red;
   }
 
   @media screen and (max-width: 1024px) {

@@ -8,7 +8,7 @@
 
 :root {
   --text-color: #ece8e8;
-  --image-background: url('./assets/sla.jpg');
+  --image-background: url('./assets/background-image.gif');
   --image-background-dragon: url(./assets/background-dragon.jpg);
   --image-background-knight: url(./assets/background-knight.jpg);
 }
