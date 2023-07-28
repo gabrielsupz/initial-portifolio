@@ -5,7 +5,7 @@ export const CharacterRoom = styled.div`
   display: flex;
   align-items: center;
 
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
   width: 400px;
 

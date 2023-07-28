@@ -5,6 +5,7 @@ export const Traits = styled.div`
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+
   min-width: 100%;
   height: max-content;
   justify-content: center;

@@ -11,6 +11,8 @@ import dragon from '../../assets/dragon.gif'
 import TypeIt from 'typeit-react'
 import { DragonRoom } from '../DragonRoom'
 import { KnightRoom } from '../KnightRoom'
+import { DevInfo } from '../DevInfo'
+import { VoltageButton } from '../VoltageButton'
 
 export function Portifolio() {
   const { items } = useCharacter()
@@ -31,24 +33,13 @@ export function Portifolio() {
             </span> */}
             <TypeIt>
               Bem vindo ao portifólio, heróis, desafios e aventuras lhe
-              aguardam. Não estou falando de um mundo de fantasia, mas da rotina
-              de um DEV.
+              aguardam. Não estou falando de um outro mundo, mas da realidade de
+              um DEV.
             </TypeIt>
           </p>
+          <VoltageButton />
         </section>
-        <section id="devInfo">
-          <CharacterBox />
-          <div className="TraitsAndTechs">
-            {' '}
-            <Traits />
-            <Technologies />
-          </div>{' '}
-          <div className="SkillsAndAffinitys">
-            {' '}
-            <Skills />
-            <Affinitys />
-          </div>
-        </section>
+        <DevInfo />
 
         <DragonRoom />
         <KnightRoom />

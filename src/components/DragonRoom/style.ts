@@ -20,11 +20,7 @@ export const DragonRoom = styled.section`
     width: 75%;
   }
 
-  @media screen and (max-width: 320px) {
-    img {
-      width: 100%;
-    }
-  }
+  /* Transform */
   div {
     perspective: 500px;
   }
@@ -60,5 +56,16 @@ export const DragonRoom = styled.section`
     text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple,
       1px 1px 0 #000;
     transform: translateZ(50px);
+  }
+
+  /* Responsivo */
+  @media screen and (max-width: 320px) {
+    img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    width: 300px;
+    height: auto;
   }
 `

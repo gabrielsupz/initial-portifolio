@@ -4,7 +4,7 @@ export const KnightRoom = styled.section`
   div {
     border-radius: 50px;
     height: 500px;
-    width: 400px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,6 +20,8 @@ export const KnightRoom = styled.section`
   img {
     width: 55%;
   }
+
+  /* Transform */
   div {
     perspective: 500px;
   }
@@ -50,5 +52,15 @@ export const KnightRoom = styled.section`
 
   h2 {
     transform: translateZ(50px);
+  }
+  /* Responsivo */
+
+  @media screen and (max-width: 425px) {
+    width: 300px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 425px) {
+    width: 400px;
   }
 `

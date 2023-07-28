@@ -10,7 +10,6 @@ export const Affinitys = styled.div`
   justify-content: center;
   align-items: center;
 
-  height: 100%;
   min-height: 208px;
   padding-bottom: 7px;
   padding-left: 20px;

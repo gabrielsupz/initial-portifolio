@@ -26,25 +26,25 @@ export const Portifolio = styled.div`
   }
 
   section#presentation {
-    #dragon {
-      height: auto;
-      width: 400px;
-      position: absolute;
-    }
     box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 grey;
-    transition: all 0.5s;
+    transition: all 1s;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-top: 15px;
-    height: 90vh;
+    height: 95vh;
+    min-height: 580px;
     width: 90%;
+    border-radius: 10px;
     background-image: var(--image-background);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 
-    gap: 100px;
     p {
+      height: 100%;
+      display: flex;
+      align-items: center;
       color: black;
       width: 50%;
       margin-left: 10%;
@@ -53,6 +53,14 @@ export const Portifolio = styled.div`
       font-family: 'VT323', monospace;
       font-weight: 400;
       align-self: flex-start;
+      transition: all 1s;
+    }
+  }
+  section#presentation.active {
+    background-image: var(--image-background-2);
+    p {
+      transition: all 1s;
+      color: white;
     }
   }
   section#presentation:hover {
@@ -90,58 +98,6 @@ export const Portifolio = styled.div`
   @media screen and (max-width: 375px) {
     section p#phrasePresentation {
       padding: 30px;
-    }
-  }
-
-  section#devInfo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    gap: 80px;
-    width: 100%;
-
-    div.TraitsAndTechs {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-
-    div.SkillsAndAffinitys {
-      display: flex;
-      flex-direction: column;
-      gap: 80px;
-    }
-  }
-
-  @media screen and (max-width: 1200px) {
-    section {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      align-items: center;
-      gap: 50px;
-
-      div.TraitsAndTechs {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-      }
-
-      div.SkillsAndAffinitys {
-        flex-direction: row;
-
-        gap: 80px;
-      }
-      @media screen and (max-width: 735px) {
-        div.SkillsAndAffinitys {
-          flex-direction: column;
-
-          gap: 80px;
-        }
-      }
     }
   }
 
