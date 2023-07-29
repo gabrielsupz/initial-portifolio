@@ -15,10 +15,21 @@ import { DevInfo } from '../DevInfo'
 import { VoltageButton } from '../VoltageButton'
 
 export function Portifolio() {
-  const { items } = useCharacter()
+  function toggleBackground() {
+    setInterval(toggle, 30000)
+  }
 
+  function toggle() {
+    var presentation = document.querySelector('section#presentation')
+
+    if (presentation?.classList.contains('active')) {
+      presentation.classList.remove('active')
+    } else {
+      presentation?.classList.add('active')
+    }
+  }
   return (
-    <S.Portifolio>
+    <S.Portifolio onTransitionEnd={() => toggleBackground()}>
       <main>
         <section id="presentation">
           <div className="header">

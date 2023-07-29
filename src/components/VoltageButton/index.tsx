@@ -2,17 +2,7 @@ import * as S from './style'
 
 export function VoltageButton() {
   return (
-    <S.VoltageButton
-      onClick={() => {
-        var presentation = document.querySelector('section#presentation')
-
-        if (presentation?.classList.contains('active')) {
-          presentation.classList.remove('active')
-        } else {
-          presentation?.classList.add('active')
-        }
-      }}
-    >
+    <S.VoltageButton>
       <button>Button</button>
       <svg
         version="1.1"
