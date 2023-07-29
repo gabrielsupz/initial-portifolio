@@ -13,6 +13,7 @@ import { DragonRoom } from '../DragonRoom'
 import { KnightRoom } from '../KnightRoom'
 import { DevInfo } from '../DevInfo'
 import { VoltageButton } from '../VoltageButton'
+import { SocialLinks } from '../SocialLinks'
 
 export function Portifolio() {
   function toggleBackground() {
@@ -25,7 +26,7 @@ export function Portifolio() {
     }
   }
   useEffect(() => {
-    const intervalId = setInterval(() => toggleBackground(), 20000)
+    const intervalId = setInterval(() => toggleBackground(), 25000)
 
     return () => clearInterval(intervalId)
   })
@@ -45,9 +46,9 @@ export function Portifolio() {
               de um DEV.
             </span> */}
             <TypeIt>
-              Bem vindo ao portifólio, heróis, desafios e aventuras lhe
-              aguardam. Não estou falando de um outro mundo, mas da realidade de
-              um DEV.
+              Bem vindo ao Portifólio, heróis, desafios e aventuras lhe
+              aguardam,afinal é isto que compõem a história de qualquer pessoa
+              incluindo de um Dev!
             </TypeIt>
           </p>
         </section>
@@ -55,7 +56,10 @@ export function Portifolio() {
 
         <DragonRoom />
         <KnightRoom />
-        <VoltageButton />
+        <div>
+          <VoltageButton />
+          <SocialLinks />
+        </div>
       </main>
     </S.Portifolio>
   )
