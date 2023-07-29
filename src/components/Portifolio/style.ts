@@ -27,7 +27,7 @@ export const Portifolio = styled.div`
 
   section#presentation {
     box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 grey;
-    transition: all 1s;
+    transition: all 2s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -57,9 +57,11 @@ export const Portifolio = styled.div`
     }
   }
   section#presentation.active {
+    transition: all 2s;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 red;
     background-image: var(--image-background-2);
     p {
-      transition: all 1s;
+      transition: all 2s;
       color: white;
     }
   }

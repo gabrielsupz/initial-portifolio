@@ -1,5 +1,5 @@
 import * as S from './style'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CharacterBox } from '../CharacterBox'
 import { Header } from '../Header'
 import { Technologies } from '../Technologies'
@@ -16,20 +16,22 @@ import { VoltageButton } from '../VoltageButton'
 
 export function Portifolio() {
   function toggleBackground() {
-    setInterval(toggle, 30000)
-  }
-
-  function toggle() {
     var presentation = document.querySelector('section#presentation')
 
-    if (presentation?.classList.contains('active')) {
-      presentation.classList.remove('active')
-    } else {
+    if (!presentation?.classList.contains('active')) {
       presentation?.classList.add('active')
+    } else {
+      presentation.classList.remove('active')
     }
   }
+  useEffect(() => {
+    const intervalId = setInterval(() => toggleBackground(), 20000)
+
+    return () => clearInterval(intervalId)
+  })
+
   return (
-    <S.Portifolio onTransitionEnd={() => toggleBackground()}>
+    <S.Portifolio>
       <main>
         <section id="presentation">
           <div className="header">
@@ -48,12 +50,12 @@ export function Portifolio() {
               um DEV.
             </TypeIt>
           </p>
-          <VoltageButton />
         </section>
         <DevInfo />
 
         <DragonRoom />
         <KnightRoom />
+        <VoltageButton />
       </main>
     </S.Portifolio>
   )
