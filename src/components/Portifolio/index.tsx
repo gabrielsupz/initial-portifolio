@@ -14,6 +14,7 @@ import { KnightRoom } from '../KnightRoom'
 import { DevInfo } from '../DevInfo'
 import { VoltageButton } from '../VoltageButton'
 import { SocialLinks } from '../SocialLinks'
+import { PortfolioRules } from '../PortfolioRules'
 
 export function Portifolio() {
   function toggleBackground() {
@@ -40,18 +41,14 @@ export function Portifolio() {
           </div>
 
           <p id="phrasePresentation">
-            {/* <span>
-              Bem vindo ao portifólio, heróis, desafios e aventuras lhe
-              aguardam. Não estou falando de um mundo de fantasia, mas da rotina
-              de um DEV.
-            </span> */}
             <TypeIt>
-              Bem vindo ao Portifólio, heróis, desafios e aventuras lhe
-              aguardam,afinal é isto que compõem a história de qualquer pessoa
-              incluindo de um Dev!
+              Bem vindo ao Portfólio, heróis, desafios e aventuras lhe aguardam,
+              afinal é isto que compõem a história de qualquer pessoa incluindo
+              de um Dev!
             </TypeIt>
           </p>
         </section>
+        <PortfolioRules />
         <DevInfo />
 
         <DragonRoom />
