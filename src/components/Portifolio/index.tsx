@@ -1,13 +1,8 @@
 import * as S from './style'
-import React, { useEffect, useState } from 'react'
-import { CharacterBox } from '../CharacterBox'
+import { useEffect } from 'react'
+
 import { Header } from '../Header'
-import { Technologies } from '../Technologies'
-import { Traits } from '../Traits'
-import { Skills } from '../Skills'
-import { Affinitys } from '../Affinity'
-import { useCharacter } from '../../Contexts/Context'
-import dragon from '../../assets/dragon.gif'
+
 import TypeIt from 'typeit-react'
 import { DragonRoom } from '../DragonRoom'
 import { KnightRoom } from '../KnightRoom'

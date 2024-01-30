@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const DragonRoom = styled.section`
-  div {
+  div#room {
     border-radius: 50px;
     height: 500px;
     display: flex;
@@ -12,6 +12,12 @@ export const DragonRoom = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    perspective: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 blue;
   }
   h2 {
     align-self: center;
@@ -20,20 +26,7 @@ export const DragonRoom = styled.section`
     width: 75%;
   }
 
-  /* Transform */
-  div {
-    perspective: 500px;
-  }
-
-  div {
-    position: relative;
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition: transform 0.5s;
-    box-shadow: 0 4px 8px 0 white, 0 6px 20px 0 blue;
-  }
-
-  div:hover {
+  div#room:hover {
     transform: translateZ(5px) rotateX(-15deg) rotateY(20deg);
     h2 {
       color: #fff;
@@ -43,6 +36,20 @@ export const DragonRoom = styled.section`
       transform: translateY(-120%);
 
       transition: transform 0.5s;
+    }
+    display: flex;
+    flex-direction: column;
+    #infoRoom {
+      transition: all 0.5s;
+
+      top: 0;
+      left: auto;
+      right: 100%;
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 300px;
     }
   }
 
